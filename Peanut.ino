@@ -37,12 +37,12 @@ if(digitalRead(switchPin) == HIGH) {// if the switch is activated
    int SDOne = StDe[0] + StDe[1] + StDe[2] + StDe[3] + StDe[4] + StDe[5] + StDe[6] + StDe[7] + StDe[8] + StDe[9] + StDe[10];
   int StD = SDOne / 10;
   
-  int FourSD = StD * 4;
-   int NegFourSD = StD * -4;
-  if(Read > FourSD) {
+  int PosBoundSD = StD * 4;
+   int NegBoundSD = StD * -4;
+  if(Read > Avg + PosBoundSD) {
       digitalWrite(ledPin, HIGH);
   }
-  if(Read < NegFourSD) {
+  if(Read < Avg + NegBoundSD) {
    digitalWrite(ledPin, HIGH);
   }
   
