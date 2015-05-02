@@ -1,5 +1,5 @@
 int ledPin = 9;      // LED connected to digital pin 9
-int outPin = 1;      // Tramister connected to analog pin 1
+int outPin = 2;      // Tramister connected to analog pin 2
 int analogPin = 3;   // receiver connected to analog pin 3
 int switchPin = 5;      // switch connected to digital pin 5
 int val = 0;         // variable to store the read value
